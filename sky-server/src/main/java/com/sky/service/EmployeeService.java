@@ -34,4 +34,17 @@ public interface EmployeeService {
      * @param id
      */
     void stratOrStop(Integer status, long id);
+
+    /**
+     * 根据nid查询员工
+     * @param id
+     * @return
+     */
+    Employee getById(Long id);
+
+    /**
+     * 编译员工信息
+     * @param employeeDTO
+     */
+    void update(EmployeeDTO employeeDTO);
 }
