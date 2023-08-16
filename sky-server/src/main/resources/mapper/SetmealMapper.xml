@@ -29,14 +29,23 @@
             <if test="image != null">
                 image = #{image},
             </if>
-            <if test="createTime != null">
-                create_time = #{createTime},
-            </if>
             <if test="updateTime != null">
                 update_time = #{updateTime},
             </if>
-            <if test="createUser != null">
-                create_user = #{createUser},
+            <if test="updateUser != null">
+                update_user = #{updateUser},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+    <update id="updateStatus">
+        update setmeal
+        <set>
+            <if test="status != null">
+                status = #{status},
+            </if>
+            <if test="updateTime != null">
+                update_time = *{updateTime},
             </if>
             <if test="updateUser != null">
                 update_user = #{updateUser},
