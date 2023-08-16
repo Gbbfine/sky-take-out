@@ -27,5 +27,5 @@ public interface SetmealDishMapper {
      * @param id
      */
     @Delete("delete from setmeal_dish where setmeal_id = #{id}")
-    void delete(String id);
+    void delete(Long id);
 }

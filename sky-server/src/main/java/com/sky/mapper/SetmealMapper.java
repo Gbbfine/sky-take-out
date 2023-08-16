@@ -33,12 +33,19 @@ public interface SetmealMapper {
     Page<SetmealVO> pageQuery(SetmealPageQueryDTO setmealPageQueryDTO);
 
     @Select("select * from setmeal where id = #{id}")
-    Setmeal getById(String id);
+    Setmeal getById(Long id);
 
     /**
      * 删除套餐
      * @param id
      */
     @Delete("delete from setmeal where id = #{id}")
-    void delete(String id);
+    void delete(Long id);
+
+    /**
+     * 修改套餐
+     * @param setmeal
+     */
+    @AutoFill(OperationType.UPDATE)
+    void update(Setmeal setmeal);
 }
