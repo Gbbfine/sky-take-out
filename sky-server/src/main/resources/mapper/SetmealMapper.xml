@@ -8,4 +8,19 @@
         insert into setmeal (id, category_id, name, price, status, description, image, create_time, update_time, create_user, update_user)
         values (#{id},#{categoryId},#{name},#{price},#{status},#{description},#{image}, #{createTime},#{updateTime},#{createUser},#{updateUser})
     </insert>
+    <select id="pageQuery" resultType="com.sky.vo.SetmealVO">
+        select * from setmeal
+        <where>
+            <if test="categoryId != null">
+                and category_id = #{categoryId}
+            </if>
+            <if test="name!=null">
+                and name = #{name}
+            </if>
+            <if test="status!=null">
+                and status = #{status}
+            </if>
+
+        </where>
+    </select>
 </mapper>
