@@ -5,10 +5,15 @@ sky:
     port: 3306
     database: sky_take_out
     username: root
-    password: root
+    password: 1006
 
   alioss:
     endpoint: oss-cn-beijing.aliyuncs.com
     access-key-id: LTAI5tBGjsUc3WvsSuFPsMCE
     access-key-secret: yCOT57o8VvJIQj5eciE88ZrQBV55qX
     bucket-name: sky-gbb
+
+  redis:
+    host: localhost
+    port: 6379
+    password: 1006
