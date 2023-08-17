@@ -1,2 +1,3 @@
-LTAI5tBGjsUc3WvsSuFPsMCE
-yCOT57o8VvJIQj5eciE88ZrQBV55qX
+去除中间的$符号
+LTAI5$$$$$$$$$$$$$$$$$$$tBGjsUc3WvsSuFPsMCE
+yCOT57o8VvJ$$$$$$$$$$$$$$$$$$$$$$IQj5eciE88ZrQBV55qX
